@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token} = require('./config.json');
+const { prefix, token} = require('../../../noal/config.json');
 const client = new Discord.Client();
 const spongebob = client.emojis.get("565285907566034967");
 function getRandomInt(max) {
@@ -25,7 +25,7 @@ client.on('message', message =>{
             }
             mock = mock.join("").toString();
             message.channel.send("<:spongebob:565285907566034967>"+mock+"<:spongebob:565285907566034967>")
-        } else if(message.content,startsWith('test')){
+        } else if(message.content.startsWith('test')){
 
         }
     })
